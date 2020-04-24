@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .bg-dark{
+          background-color:rgb(52, 58, 64) !important;
+      }
+      .text-white{
+          color:rgb(255,255,255);
+      }
+      .bg-secondary{
+          background-color:rgb(108, 117, 125) !important;
+      }
+      .p-3{
+          padding:1rem !important;
+      }
+      .mb-5{
+          margin-bottom: 3em !important;
+      }
+      .mx-auto{
+          margin-left:auto !important;
+          margin-right:auto !important;
+      }
+      .display{
+          font-size: 90px;
+      }
+      .heading{
+          font-size:50px !important;
+          margin-top:-9px;
+      }
+      .mt-5{
+          margin-top:3rem !important;
+      }
+      .text-center{
+          text-align: center;
+      }
+  </style>
+    </head>
+    <body class="bg-dark text-white">
+        <header class="bg-secondary text-center p-3 mb-5">
+            <h1 class="heading">Word Beater</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-3">
+                    <p class="text-center">Type the Given Word Within
+                    <span class="text-success" id="seconds">5</span> Seconds :</p>
+                    <h2 class="display text-center" id="current-word">hello</h2>
+                    <input type="text" class="form-control form-control-lg mt-5" placeholder="Start Typing.." id="word-input">
+                    <h4 class="mt-3 text-center" id="message"></h4>
+                    <!-- Time and Score Column -->
+                    <div class="row mt-5">
+                        <div class="col-md-6 text-center">
+                            <h3>Time Left <span id="time">0</span></h3>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h3>Score <span id="score">0</span></h3>
+                        </div>
+                    </div>
+                    <!-- Instructions -->
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="card card-body bg-secondary text-white">
+                                <h5 class="text-center">Instructions</h5>
+                                <p>Type each Word in the given amount of time to score.To play again,just type the current word which is displayed.Your score will be reset.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Game.js"></script>
+    </body>
+</html>
